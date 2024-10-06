@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script src="Tic_Tac_Toe.js"></script>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    hr {
+        width: 500px;
+        height: 2px;
+        background-color: black;
+    }
+
+
+    h1{
+        color: rgb(96,9,240); 
+    }
+    #board {
+        width: 450px;
+        height: 450px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tile {
+        width: 130px;
+        height: 150px;
+        
+        /* Text */
+        font-size: 110px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+    }
+
+    .winner {
+        background-color: rgb(218, 210, 232);
+        color: red;
+    }
+
+
+    .horizontal-line {
+        border-bottom: 5px solid rgb(96,9,240);
+    }
+
+    .vertical-line {
+        border-right: 4px solid rgb(96,9,240);
+    }
+    @media (max-width:487px){
+        #board {
+        width: 250px;
+        height: 250px;
+    }
+    .tile {
+        width: 79px;
+        height: 92px;
+        font-size: 90px;
+    }
+    hr {
+        width: 301px;
+    }
+    }
+</style>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <hr>
+    <br>
+    <!-- 3x3 -->
+    <div id="board">
+    </div>
+</body>
+</html>
